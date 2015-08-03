@@ -28,7 +28,7 @@ module.exports = function() {
 				firstName: profile.name.givenName,
 				lastName: profile.name.familyName,
 				displayName: profile.displayName,
-				email: profile.emails[0].value,
+				email: profile.emails[0].value,		// uncaught error here
 				username: profile.username,
 				provider: 'linkedin',
 				providerIdentifierField: 'id',
